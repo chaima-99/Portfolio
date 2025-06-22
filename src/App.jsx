@@ -1,6 +1,7 @@
 import {React,useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Hero from './components/Hero';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -10,7 +11,11 @@ function App() {
 
   return (
     <>
-      <main className='bg-gray-950'></main>
+      <main className='bg-gray-950'>
+        <Hero />
+        
+      </main>
+
     </>
   )
 }

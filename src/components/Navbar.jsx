@@ -18,9 +18,40 @@ export default function Navbar() {
         
         {/* Mobile Menu Toggle */}
           <button className="md:hidden focus:outline-none" onClick={() => setIsOpen(!isOpen)} >
-            <FiMenu />
+            <FiMenu className="w-8 h-8 text-white"/>
           </button>
+        
+        {/* Desktop Menu Toggle */}
+        <nav className='hidden md:flex items-center space-x-7'>
+            {NavbarLinks.map((link) => (
+              <a key={link.id} href={link.link} className="text-lg hover:text-gray-200 ">
+                {link.name} </a>
+            ))}
+            <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg">
+              {" "}
+              Contact {" "}
+            </button>
+        </nav>
+
       </div>
+
+        {/* Mobile Navigation */}
+        <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg--[#801b9c] absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-8 pt-16`}>
+            {/* Close Button */}
+            <button className="absolute top-5 right-5 text-white" onClick={() => setIsOpen(false)}>
+              <Fix className="w-8 h-8" />
+            </button>
+            {/* Mobile Navigation  */}
+            {NavbarLinks.map((link) => (
+              <a key={link.id} href={link.link} className="text-lg text-white hover:text-gray-300" onClick={() => setIsOpen(false)}>
+                {link.name} 
+                </a>
+            ))}
+            {/* Contact button */}
+            <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg">
+            </button>
+        </div>
+
     </header>
   );
 }

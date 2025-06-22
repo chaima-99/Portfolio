@@ -11,16 +11,16 @@ export default function Navbar() {
     { id:4 ,name: "MY projects", link: "#projects" }
     ]
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold">MyApp</div>
-        <ul className="flex space-x-4">
-          <li><a href="#home" className="text-white hover:text-gray-300">Home</a></li>
-          <li><a href="#about" className="text-white hover:text-gray-300">About</a></li>
-          <li><a href="#services" className="text-white hover:text-gray-300">Services</a></li>
-          <li><a href="#contact" className="text-white hover:text-gray-300">Contact</a></li>
-        </ul>
+    <header className='fixed top-0 left-0 w-full z-20 text-white' data-aos='fade-up' data-aos-delay='100'>
+      <div className="container mx-auto flex justify-between items-center p-5">
+        {/* LOGO */}
+        <a href="#home" className="text-4xl font-bold italic text-white">Portfolio</a>
+        
+        {/* Mobile Menu Toggle */}
+          <button className="md:hidden focus:outline-none" onClick={() => setIsOpen(!isOpen)} >
+            <FiMenu />
+          </button>
       </div>
-    </nav>
+    </header>
   );
 }

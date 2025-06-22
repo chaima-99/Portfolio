@@ -1,5 +1,5 @@
 import React , {useState} from "react";
-import { FiMenu,Fix } from "react-icons/fi";
+import { FiMenu,FiX } from "react-icons/fi";
 
 
 export default function Navbar() {
@@ -39,7 +39,7 @@ export default function Navbar() {
         <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg--[#801b9c] absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-8 pt-16`}>
             {/* Close Button */}
             <button className="absolute top-5 right-5 text-white" onClick={() => setIsOpen(false)}>
-              <Fix className="w-8 h-8" />
+              <FiX className="w-8 h-8" />
             </button>
             {/* Mobile Navigation  */}
             {NavbarLinks.map((link) => (
@@ -49,6 +49,8 @@ export default function Navbar() {
             ))}
             {/* Contact button */}
             <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg">
+            {" "}
+              Contact {" "}
             </button>
         </div>
 

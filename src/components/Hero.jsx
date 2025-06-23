@@ -27,7 +27,7 @@ export default function Hero() {
                 </p>
                 <div className='flex items-center space-x-4 mb-6'>
                     <a href="#">
-                        <img src={github} alt="github" className='w-9 h-9'/>
+                        <img src={github} alt="github" className='w-9 h-9 rounded-full'/>
                     </a>
                     <a href="#">
                         <img src={LinkedIn} alt="LinkedIn" className='w-9 h-9'/>

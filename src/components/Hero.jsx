@@ -23,7 +23,7 @@ export default function Hero() {
                     </h2>
                 </header>
                 <p className='text-base sm:text-lg md:text-lg text-gray-200 mb-6'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aut quisquam provident explicabo nam quae, perspiciatis vel delectus in quas?
+                    I am a passionate full-stack developer with a love for creating dynamic and responsive web applications. My journey in web development has been fueled by a desire to build innovative solutions that enhance user experiences.
                 </p>
                 <div className='flex items-center space-x-4 mb-6'>
                     <a href="#">

@@ -8,9 +8,9 @@ export default function About() {
     <section id="about" className="min-h-screen overflow-hidden flex items-center justify-center text-white px-4 sm:px-6">
         <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <figure data-aos="fade-right" data-aos-delay='500' className="flex flex-wrap justify-center gap-4 relative mt-10 sm:mt-10">
-                <div className="h-[200px] sm:h-[300px] w-[350px] sm:w-[600px] lg:h-[300px] lg:w-[500px] bg-gradient-to-l from-[#6d2897] via-[#6c95f5] to-[#bb61c5] absolute transform rotate-10 z-0 right-10 top-2 md:top-10 rounded-full"></div>
-                <img src={imgabout1} alt="About Image" className="absolute top-8 left-8 sm:left-10 transform -translate-y-12 z-20 w-24 h-24 sm:w-32 sm:h-32 rounded-3xl shadow-lg" />
-                <img src={imageAbout} alt="About Image" className="relative z-10 w-36 h-44 sm:w-20 md:w-72 md:h-96 rounded-lg shadow-lg " />
+                <div className="h-[200px] sm:h-[300px] w-[350px] sm:w-[600px] lg:h-[300px] lg:w-[500px] bg-gradient-to-l from-[#6d2897] via-[#6c95f5] to-[#bb61c5] absolute transform rotate-10 z-0 right-14 top-2 md:top-10 md:right-15 rounded-full"></div>
+                <img src={imgabout1} alt="About Image" className="absolute top-8 left-25 sm:left-10 transform -translate-y-12 z-20 w-24 h-24 sm:w-32 sm:h-32 rounded-3xl shadow-lg" />
+                <img src={imageAbout} alt="About Image" className="relative z-10 w-25 h-40 sm:w-20 md:w-45 md:h-70 md:-left-4 rounded-lg shadow-lg left-5 top-7" />
                 <img src={imgabout} alt="About Image" className="absolute bottom-0 right-5 sm:right-10 transform translate-y-12 z-10 w-20 h-20 sm:w-32 sm:h-32 rounded-3xl shadow-lg" />
             </figure>
 

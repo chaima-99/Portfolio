@@ -3,6 +3,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Hero from './components/Hero';
 import About from './components/About';
+import Skills from './components/Skills';
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -15,6 +17,7 @@ function App() {
       <main className='bg-gray-950 '>
         <Hero />
         <About />
+        <Skills />
       </main>
 
     </>

@@ -10,8 +10,8 @@ const ProjectCard = ({ image, title, description, link }) => (
     <div className='relative z-10'>
         <figure className='relative'> 
             <img src={image} alt={title} className='w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110' />
-            <a href={link} target="_blank" rel="noopener noreferrer" className='absolute h-[202px] inset-0 flex items-center justify-center bg-purple-800 bg-opacity-50 opacity-0 grpup-hover:opacity-100 transition-opacity duration-300'>
-                <button className='bg-white font-medium text-black py-2 px-4 rounded-3xl shadow hover_text-white hover_bg-[#2879d5]'>Live Preview</button>
+            <a href={link} target="_blank" rel="noopener noreferrer" className='absolute h-[202px] inset-0 flex items-center justify-center bg-purple-500 bg-opacity-50 opacity-0 group-hover:opacity-500 transition-opacity duration-300 '>
+                <button className='bg-white font-medium text-black py-2 px-4 rounded-3xl shadow hover:text-white hover:bg-[#2879d5] cursor-pointer'>Live Preview</button>
             </a>
         </figure>
         <div className='py-4 px-6'> 
@@ -48,7 +48,7 @@ export default function Projects() {
     ];
   return (
     <main className='p-4'>
-        <section data-aos='fade-up' data-aos-delay='300'>
+        <section data-aos='fade-up' data-aos-delay='300' id='projects' className='max-w-6xl mx-auto py-10'>
             <header  className='text-center'>
                 <h1 className='text-3xl text-white sm:text-4xl font-bold mb-6'>
                     My <span className='text-purple-400'>Projects</span>
